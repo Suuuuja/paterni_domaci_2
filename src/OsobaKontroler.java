@@ -64,15 +64,12 @@ public class OsobaKontroler {
             view.getPanelMesto().ocistiGresku();
         }
 
-        // Ako ima grešaka, prekidamo
         if (!validno) {
             return;
         }
 
-        // Ako je sve OK → napravi Osoba
         Osoba osoba = new Osoba(ime, prezime, pol, mesto);
 
-        // Prikaži u JDialogu (JOptionPane)
         javax.swing.JOptionPane.showMessageDialog(
                 view,
                 "Uspešno sačuvana osoba:\n" +
